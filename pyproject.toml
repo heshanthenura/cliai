@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=65.5.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "termate"
+version = "0.1.0"
+description = "A Linux-only command-line AI assistant for generating safe Linux commands interactively."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Heshan Thenura", email = "your-email@example.com"}
+]
+keywords = ["cli", "linux", "assistant", "openai", "openrouter"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: Console",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "openai",
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/heshanthenura/termate"
+Repository = "https://github.com/heshanthenura/termate"
+Documentation = "https://github.com/heshanthenura/termate#readme"
+
+[project.scripts]
+termate = "termate.app:start_cli"
+
+[tool.setuptools.packages.find]
+where = ["termate"]
