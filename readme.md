@@ -35,11 +35,12 @@ export OPENROUTER_API_KEY="your_api_key_here"
 
 (You can add this line to your `~/.bashrc` or `~/.zshrc` to make it permanent.)
 
-### Windows (PowerShell)
+<!-- ### Windows (PowerShell)
+
 
 ```powershell
 setx OPENROUTER_API_KEY "your_api_key_here"
-```
+``` -->
 
 After setting it, restart your terminal.
 
