@@ -1,6 +1,6 @@
-# CLI-AI 🤖💻
+# TerMate 🤖💻
 
-**CLI-AI** is a command-line assistant powered by [OpenRouter](https://openrouter.ai/).  
+**TerMate** is a command-line assistant powered by [OpenRouter](https://openrouter.ai/).  
 It helps you generate **safe Linux commands** with explanations, and lets you **choose to run them interactively** from the terminal.
 
 I originally built this just for fun, but it turned out to be much better and more useful than I expected.
@@ -53,8 +53,8 @@ After setting it, restart your terminal.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/CLIAI.git
-   cd CLIAI
+   git clone https://github.com/heshanthenura/termate.git
+   cd termate
    ```
 
 2. Install dependencies:

@@ -1,6 +1,6 @@
-from utils.openRouterClient import get_response
-from utils.processCommand import process
-from utils.bcolors import bcolors
+from .openRouterClient import get_response
+from .processCommand import process
+from .bcolors import bcolors
 import os,sys
 
 def start_cli():
@@ -15,7 +15,7 @@ def start_cli():
     print(f"{bcolors.OKCYAN}{bcolors.BOLD}Welcome to CLI-AI!{bcolors.ENDC} (type 'exit' or 'quit' to leave)\n")
 
     while True:
-        query = input(f"{bcolors.OKGREEN}cli-ai> {bcolors.ENDC}")
+        query = input(f"{bcolors.OKGREEN}termate> {bcolors.ENDC}")
 
         if query.lower() in ["exit", "quit"]:
             print(f"{bcolors.OKBLUE}👋 Goodbye!{bcolors.ENDC}")

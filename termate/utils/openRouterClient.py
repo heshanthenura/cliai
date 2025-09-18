@@ -1,6 +1,6 @@
 from openai import OpenAI
 import json,os,sys
-from utils.bcolors import bcolors
+from .bcolors import bcolors
 
 api_key = os.getenv("OPENROUTER_API_KEY")
 if not api_key:

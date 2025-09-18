@@ -1,5 +1,5 @@
-from utils.bcolors import bcolors
-from utils.runCommand import runInCLI
+from .bcolors import bcolors
+from .runCommand import runInCLI
 
 def process(commands):
     print(f"{bcolors.WARNING}\n⚠️  Run this commands at your own risk:{bcolors.ENDC} ")

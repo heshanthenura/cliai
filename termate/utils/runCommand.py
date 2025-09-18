@@ -1,5 +1,5 @@
 import subprocess
-from utils.bcolors import bcolors
+from .bcolors import bcolors
 
 def runInCLI(command):
     user_input = input(
