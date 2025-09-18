@@ -1,10 +1,17 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+
+here = Path(__file__).parent
+
+long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
-    name="termate",
+    name="termate-ai",
     version="0.1.0",
     author="Heshan Thenura Kariyawasam",
     description="A Linux CLI assistant",
+    long_description=long_description,
+    long_description_content_type="text/markdown",  
     packages=find_packages(),
     install_requires=[
         "openai",
@@ -13,7 +20,7 @@ setup(
     python_requires=">=3.10",
     entry_points={
         "console_scripts": [
-            "termate=termate.app:main"
+            "termate-ai=termate.app:main"
         ]
     },
     classifiers=[
