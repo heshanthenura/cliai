@@ -1,10 +1,12 @@
 import platform
 import sys
-from .utils.userCLI import start_cli
+from termate.utils.userCLI import start_cli
 
-if platform.system() != "Linux":
-    print("⚠️ TerMate only works on Linux!")
-    sys.exit(1)
+def main():
+    if platform.system() != "Linux":
+        print("⚠️ TerMate only works on Linux!", file=sys.stderr, flush=True)
+        sys.exit(1)
+    start_cli()
 
 if __name__ == "__main__":
-    start_cli()
+    main()
