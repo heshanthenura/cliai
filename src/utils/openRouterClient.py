@@ -1,10 +1,15 @@
 from openai import OpenAI
-import json
+import json,os,sys
+from utils.bcolors import bcolors
 
+api_key = os.getenv("OPENROUTER_API_KEY")
+if not api_key:
+    print(f"{bcolors.FAIL}❌ Error: OPENROUTER_API_KEY environment variable not set.{bcolors.ENDC}")
+    sys.exit(1)
 
 client = OpenAI(
-  base_url="https://openrouter.ai/api/v1",
-  api_key="<YOUR API KEY>",
+    base_url="https://openrouter.ai/api/v1",
+    api_key=api_key,
 )
 
 
