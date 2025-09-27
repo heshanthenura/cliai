@@ -27,7 +27,7 @@ You need an **API key from [OpenRouter](https://openrouter.ai/)**.
 - Sign up for free and grab your API key.
 - Set it as an **environment variable** so the app can use it:
 
-### Linux / macOS
+### Linux
 
 ```bash
 export OPENROUTER_API_KEY="your_api_key_here"
@@ -68,6 +68,24 @@ After setting it, restart your terminal.
    ```bash
    python src/app.py
    ```
+
+## 📦 Install via PyPI
+
+For easier usage, I’ve published **TerMate AI** on PyPI.
+
+It’s recommended to use **pipx** so it runs in its own isolated environment:
+
+```bash
+pipx install termate-ai
+```
+
+Then you can just run:
+
+```bash
+termate-ai
+```
+
+👉 PyPI link: [https://pypi.org/project/termate-ai/](https://pypi.org/project/termate-ai/)
 
 ## ⚠️ Disclaimer
 
